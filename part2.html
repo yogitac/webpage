@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+           Dating website
+    </title>
+    <style>
+    fieldset { background: lightyellow;
+               border:10px solid yellow;
+               margin-bottom:10px;
+               width: 720px;
+
+             }
+    label {
+            width: 180px;
+            display:inline-block;
+            text-align: right;
+            vertical-align: top;
+    }
+    input #methodtocontact {
+      width: auto;
+    }
+    .left_indicator {
+          background: maroon;
+          vertical-align: top;
+    }
+    .right_indicator {
+
+      background: purple;
+      vertical-align: top;
+    }
+    textarea {
+      width:360px;
+      height:50px
+    }
+      }
+    </style>
+  </head>
+  <body>
+      <h1><b>Please Enter Your Details For Our Dating Website</b></h1>
+        <form action="https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="get" enctype="multipart/form-data">
+          <fieldset>
+            <legend>Your Face</legend>
+              <label for="yourimage">Your Image:</label>
+              <input type="file" id="miraya" name="miraya" required><br>
+              <label for="imagepreview">Image Preview:</label>
+              <img src="" id="preview" name="image" width="50%">
+
+
+          </fieldset>
+          <fieldset>
+            <legend>Your General Details</legend>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" placeholder="Your Full Name" required><br>
+              <label for="gender">Gender:</label>
+              <input type="radio" id="gender" name="gender" value="male" required>Male
+              <input type="radio" id="gender" name="gender" value="female" required>Female<br>
+              <label for="age">Age:</label>
+              <input type="number" value="18"><br>
+              <label for="dob">Date of Birth:</label>
+              <input type="date" name="date"><br>
+              <label for="favoritecolor">Favorite Color:</label>
+              <input type="color" id="favoritecolor" name="favoritecolor"><br>
+              <label for="country">Which country</label>
+                <select id="country" name="country">
+                  <option value="noselection"></option>
+                  <option value="india">India</option>
+                  <option value="australia">Australia</option>
+                  <option value="us">United States</option>
+                  <option value="bhutan">Bhutan</option>
+                  <option value="bangladesh">Bangladesh</option>
+                </select>
+          </fieldset>
+
+          <fieldset>
+            <legend>Your Indicators</legend>
+            <label for="height">Height:</label><span class="left_indicator">Short</span>
+            <input type="range" id="height" name="height" min="0" max="100"><span class="right_indicator"> Tall</span><br>
+            <label for="salary">Salary:</label><span class="left_indicator"> Poor</span>
+            <input type="range" id= "salary" name="salary" min="0" max="100"><span class="right_indicator"> Rich</span><br>
+          </fieldset>
+          <fieldset>
+            <legend>Your Contact Information</legend>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="mobile">Mobile:</label>
+            <input type="tel" id="mobile" name="mobile"><br>
+            <label for="address">Address:</label>
+            <textarea rows="5" cols="20" name="address"></textarea><br>
+            <label for="methodtocontact">Method to contact you:</label>
+            <input type="checkbox" id="methodtocontact" name="methodtocontact">Email
+            <input type="checkbox" id="methodtocontact" name="methodtocontact">Whatsapp
+            <input type="checkbox" id="methodtocontact" name="methodtocontact">In-app chat
+          </fieldset>
+          <input type="submit" value="Submit">
+        </form>
+
+  </body>
+
+</html>
